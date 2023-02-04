@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>Test</title>
+        <style>
+        .main_container{
+            display: grid;
+            grid-template-columns: repeat(2,450px);
+            grid-template-areas: "a a" "b c" "d d";
+            border: 2px solid black;
+            width: fit-content;
+            height: fit-content;
+        }
+         header{
+            grid-area: a;
+
+         }
+         .f1{
+            grid-area: b;
+         }
+         .f2{
+            grid-area: c;
+            
+            color:ghostwhite;
+            
+         }
+         .f3{
+            grid-area: d;
+           
+         }
+         section{
+            background-image: url(../Web-Tech-Test/Img/k.jpg);
+            color: ghostwhite;
+         }
+         button{
+            background-color: brown;
+            border-radius: 20px;
+         }
+         h1,h4{
+            color: black;
+         }
+         footer{
+            background-color: ghostwhite;
+            color: black;
+         }
+         form{
+            border: 2px solid black;
+            background-color: ghostwhite;
+            color: black;
+            width: fit-content;
+            height: fit-content;
+         }
+         a{
+            text-decoration: none;
+            color: black;
+         }
+         nav{
+            display: flex;
+            justify-content: space-around;
+         }
+         .x{
+            color: ghostwhite;
+            text-align: center;
+            position: relative
+            ;
+            top: 100px;
+         }
+         .frm{
+            height: 376px;
+         }
+         
+            </style>
+        </style>
+    </head>
+    <body>
+        <div class="main_container">
+            <header>
+                <nav>
+                <img src="../Web-Tech-Test/Img/lyft.jpg" height="30px" width="30px">
+            
+                    <a href="">CITIES</a>
+                    <a href="">DRIVE</a>
+                    <a href="">BLOG</a>
+                    <a href="">PARTNERS</a>
+                    <a href="">HELP</a>
+                </nav>
+            </header>
+            <section class="f1">
+                <h1 class="x">Make up to $35/hr<br>
+                Driving Your Car</h1>
+            </section>
+            <section class="f2">
+                <form class="frm">
+                    <table>
+                        <tr>
+                            <td>                    <h1>Apply Now</h1>
+                                <h4 >Enter your info and then download<br>
+                                    the Lyft app to create your driver</h4></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="First Name"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Last Name"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" placeholder="Email Address"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="City"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" placeholder="Phone Number"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Promo Code(optional)"></td>
+
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox">I agree</td>
+                        </tr>
+                        <tr>
+                            <td>       <button>
+                                Become a Driver
+                            </button></td>
+
+                        </tr>
+                        <tr>
+                            <td>Already applied<a href="">Check the status of your<br>
+                            application here.</a></td>
+                        </tr>
+                    </table>
+             
+                </form>
+            </section>
+            <footer class="f3">
+                <h1>See How Much You can Make</h1>
+                <h4>How many hours do you want to drive this week</h4>
+                <form>
+                    <table>
+                        <tr>
+                            <td><input type="number" placeholder="hours"><input type="text" placeholder="City"><button>Calculate</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </footer>
+        </div>
+    </body>
+</html>
